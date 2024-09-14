@@ -13,6 +13,12 @@ header {
 h3 {
     color: #FFE81F;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
 }
 
 h2 {
@@ -54,3 +60,28 @@ p {
     flex-direction: column;
     justify-content: center;
 }
+  
+  h3:focus,
+  button:hover {
+    color: #FFE81F;
+  }
+  
+  h3:focus:after,
+  h3:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  h3:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #FFE81F;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
