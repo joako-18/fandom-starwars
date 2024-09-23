@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
 body {
     background-image: url('./img/fondo-espacio.png');
     padding: 0;
     margin: 0;
+    font-family: "Pathway Gothic One", sans-serif;
 }
 
 header {
@@ -10,28 +13,27 @@ header {
     justify-content: center;
 }
 
-h3 {
+a {
     color: #FFE81F;
-    font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
     position: relative;
-    text-transform: uppercase;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: color;
+    text-decoration: none;
+    font-size: 5vh;
 }
 
 h2 {
     color: #FFE81F;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 4em;
 }
 
 p {
     color: #FFE81F;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     width: 70%;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150%;
 }
 
 .menuItem {
@@ -53,6 +55,7 @@ p {
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-left: 50px;
 }
 
 .text {
@@ -60,28 +63,44 @@ p {
     flex-direction: column;
     justify-content: center;
 }
-  
-  h3:focus,
-  button:hover {
+
+  footer {
+    background-color: black;
+    border: solid;
+    border-width: #FFE81F;
+    border-top: 3px solid #FFE81F;
+    display: flex;
+  justify-content: space-between;
+  }
+
+  h3 {
     color: #FFE81F;
+    font-size: 4vh;
   }
-  
-  h3:focus:after,
-  h3:hover:after {
-    width: 100%;
-    left: 0%;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 400px;
+    margin-bottom: 30px;
   }
-  
-  h3:after {
-    content: "";
-    pointer-events: none;
-    bottom: -2px;
-    left: 50%;
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color: #FFE81F;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: width, left;
+
+  .menuFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .titulos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    margin-left: 50px;
+    margin-top: 50px;
   }
